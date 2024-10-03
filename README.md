@@ -15,7 +15,7 @@ A new user joins a network. We assume the network has 2 DHCP servers.
 <br/>
 
 >[!NOTE]
-> We assume that our **DHCP server** operates with average lease times (8 hours).
+> *We assume that our **DHCP server** operates with average lease times (8 hours).*
 
 
 ## Diagram
