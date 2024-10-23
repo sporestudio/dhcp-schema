@@ -15,7 +15,7 @@ A new user joins a network. We assume the network has 2 DHCP servers.
 <br/>
 
 >[!NOTE]
-> *We assume that our **DHCP server** operates with average lease times (8 hours).*
+> *We assume that our **DHCP server** operates with average lease time (8 hours).*
 
 
 ## Diagram
@@ -47,6 +47,7 @@ sequenceDiagram
 
 
     client->>server2: DHCPDISCOVER (Broadcast message)
+    client->>server1: DHCPDISCOVER (Broadcast message)
     server2->>client: DHCPOFFER (8h max. use)
     client->>server2: DHCPREQUEST (Broadcast message) 
     server2->>client: DHCPACK (Server 2 provides an IP to client)
